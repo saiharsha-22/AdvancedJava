@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>HelloForm</servlet-class>
+        
+        <servlet-name>ReadCookies</servlet-name>
+        <servlet-class>ReadCookies</servlet-class>
+        
+        <servlet-name>DeleteCookies</servlet-name>
+        <servlet-class>DeleteCookies</servlet-class>
+       
+           <servlet-name>SessionTrack</servlet-name>
+        <servlet-class>SessionTrack</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/HelloForm</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>ReadCookies</servlet-name>
+        <url-pattern>/ReadCookies</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>DeleteCookies</servlet-name>
+        <url-pattern>/DeleteCookies</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>SessionTrack</servlet-name>
+        <url-pattern>/SessionTrack</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
